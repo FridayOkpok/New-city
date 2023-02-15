@@ -12,17 +12,17 @@
   flex-direction: column;
   justify-content: flex-start;
   width: 100%;
-  animation: fade-in-right 3s ease forwards;
+  /* animation: fade-in-right 3s ease forwards; */
 }
 
-@keyframes fade-in-right {
+/* @keyframes fade-in-right {
   0% {
     transform: translateX(100%);
   }
   100% {
     transform: translateX(0);
   }
-}
+} */
 
 .container-1 .container-content {
   margin-top: 3.5rem;
