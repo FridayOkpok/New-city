@@ -3,26 +3,5 @@
   padding: 20px 40px;
   justify-content: space-between;
   align-items: center;
-  animation: fade-in 20s ease infinite;
-}
-
-@keyframes fade-in {
-  0% {
-    transform: translateX(100%);
-  }
-  30% {
-    transform: translateX(80%);
-  }
-  60% {
-    transform: translateX(50%);
-  }
-  90% {
-    transform: translateX(20%);
-  }
-  95% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+  overflow: hidden;
 }
