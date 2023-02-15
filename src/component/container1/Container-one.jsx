@@ -18,9 +18,9 @@ function ContainerOne() {
             <div className="btn btn-login"> Get Moving </div>
             <div className="btn btn-signup"> Learn More </div>
           </div>
+          {/* the select component will appear here */}
+          <SelectItem />
         </div>{" "}
-        {/* the select component will appear here */}
-        <SelectItem />
       </div>
     </section>
   );

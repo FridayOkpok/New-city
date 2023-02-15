@@ -3,15 +3,13 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 100vh;
+  height: 100%;
 }
+
 .container-1 {
-  /* position: relative; */
-  /* padding-top: 5rem; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: 50vh;
   width: 100%;
   animation: fade-in-right 3s ease forwards;
 }
@@ -27,12 +25,14 @@
 }
 
 .container-1 .container-content {
-  padding: 20px 95px;
-  max-width: 420px;
+  margin-top: 3.5rem;
+  height: 100vh;
 }
 
 .container-1 .container-content h2 {
   /* here i will change the color to white when i insert picture*/
+  padding: 0 10px;
+  margin-left: 2rem;
   font-family: Josefin Sans;
   color: #fbfeff;
   background: rgba(255, 255, 255, 0.2);
@@ -41,20 +41,28 @@
   line-height: 58px;
   letter-spacing: 0em;
   text-align: left;
-  /* opacity: 0.3; */
+  max-width: 420px;
 }
 
 .container-1 .container-content p {
   font-family: Josefin Sans;
   font-size: 20px;
+  margin-left: 2rem;
+
   font-weight: 700;
   color: #fbfeff;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 3px;
   padding: 2px;
   line-height: 27px;
+  max-width: 420px;
+  padding: 0 10px;
   letter-spacing: 0.15000000596046448px;
   text-align: justify;
+}
+
+.container-1 .container-content .btn-area {
+  width: 420px;
 }
 
 .container-1 .container-content .btn-login {
