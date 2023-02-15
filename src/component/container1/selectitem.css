@@ -1,0 +1,28 @@
+.travel {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  bottom: -15rem;
+  background-color: #391cee;
+  margin: 6px auto;
+  margin-top: 5rem;
+  padding: 20px 80px;
+  /* width: 70%; */
+  justify-content: flex-start;
+}
+
+.travel h3 {
+  color: white;
+}
+
+.travel .travel-input {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.travel .travel-input .travel-item {
+  align-items: center;
+}

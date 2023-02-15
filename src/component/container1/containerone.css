@@ -1,0 +1,71 @@
+.containpics {
+  background: url(./background-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+}
+.container-1 {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 50vh;
+  width: 100%;
+  animation: fade-in-right 3s ease forwards;
+}
+
+@keyframes fade-in-right {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.container-1 .container-content {
+  padding: 20px 95px;
+  max-width: 420px;
+}
+
+.container-1 .container-content h2 {
+  /* here i will change the color to white when i insert picture*/
+  font-family: Josefin Sans;
+  color: #fbfeff;
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: 0em;
+  text-align: left;
+  /* opacity: 0.3; */
+}
+
+.container-1 .container-content p {
+  font-family: Josefin Sans;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fbfeff;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+  padding: 2px;
+  line-height: 27px;
+  letter-spacing: 0.15000000596046448px;
+  text-align: justify;
+}
+
+.container-1 .container-content .btn-login {
+  width: 95px;
+}
+.container-1 .container-content .btn-signup {
+  width: 95px;
+}
+
+/* fetch(`https://restcountries.com/v2/name/${countryName}?fullText=true`)
+  .then((response) => response.json())
+  .then((data) => {
+    const states = data[0].subdivision;
+    console.log(states);
+  }); */
