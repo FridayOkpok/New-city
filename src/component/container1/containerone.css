@@ -1,9 +1,10 @@
 .containpics {
   background: url(./background-image.jpg);
   background-size: cover;
+  background-position: 100% 100%;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 100%;
+  height: fit-content;
 }
 
 .container-1 {
@@ -18,7 +19,6 @@
   0% {
     transform: translateX(100%);
   }
-
   100% {
     transform: translateX(0);
   }
@@ -70,6 +70,12 @@
 }
 .container-1 .container-content .btn-signup {
   width: 95px;
+}
+
+@media screen and (max-width: 782px) {
+  .containpics .container-1 .container-content .btn-area {
+    display: none;
+  }
 }
 
 /* fetch(`https://restcountries.com/v2/name/${countryName}?fullText=true`)

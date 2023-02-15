@@ -29,15 +29,32 @@
 @media screen and (max-width: 1198px) {
   .travel {
     display: flex;
-    width: 9rem;
+    width: 70%;
     justify-content: flex-start;
     margin: 2rem 0 4px 2rem;
   }
+
+  .travel .travel-input {
+    display: flex;
+    gap: 10px;
+    /* justify-content: space-between; */
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1038px) {
+  .travel {
+    display: flex;
+    width: 70%;
+    justify-content: flex-start;
+    margin: 2rem 0 4px 2rem;
+    padding: 10px 30px;
+  }
+
   .travel .travel-input {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    /* justify-content: space-between; */
     align-items: center;
   }
 }
