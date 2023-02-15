@@ -12,17 +12,17 @@
   flex-direction: column;
   justify-content: flex-start;
   width: 100%;
-  /* animation: fade-in-right 3s ease forwards; */
+  animation: fade-in-right 3s ease forwards;
 }
 
-/* @keyframes fade-in-right {
-  0% {
-    transform: translateX(100%);
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
   }
-  100% {
-    transform: translateX(0);
+  to {
+    opacity: 1;
   }
-} */
+}
 
 .container-1 .container-content {
   margin-top: 3.5rem;
@@ -73,7 +73,7 @@
 }
 
 @media screen and (max-width: 782px) {
-  .containpics .container-1 .container-content .btn-area {
+  .container-1 .container-content .btn-area {
     display: none;
   }
 }
