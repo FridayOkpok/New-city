@@ -1,8 +1,4 @@
 .nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   justify-content: space-around;
   padding: 5px 5rem;
   background: rgba(254, 253, 243, 0.7);
