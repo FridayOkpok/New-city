@@ -15,8 +15,7 @@ function OurService() {
               <p className="service-about">
                 {" "}
                 check out our best service you can possibly orders in building{" "}
-                <br />
-                your company and don't forget to ask via our email or our <br />
+                your company and don't forget to ask via our email or our
                 costomer service if you are interested in using our service{" "}
               </p>
             </div>
@@ -55,6 +54,20 @@ function OurService() {
               <div className=" btn-area">
                 <p className="btn-more"> Read more </p>
               </div>
+            </div>
+          </div>
+          <div className="service-area">
+            <div className="para">
+              <p className="service-about">
+                At NewCity, we set ourselves apart with experienced movers,
+                top-notch equipment, and a commitment to customer satisfaction.
+                Trust us to make your move seamless and stress-free. Experience
+                the difference.
+              </p>
+            </div>
+            <div className="service-text">
+              <h1>What Make Us Different?</h1>
+              <h5>Why choose us!</h5>
             </div>
           </div>
         </div>
