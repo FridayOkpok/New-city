@@ -9,7 +9,6 @@ function HomeContainer() {
       <div className="containpics">
         <NavBar />
         <ContainerOne />
-        {/* <SelectItem /> */}
       </div>
     </>
   );

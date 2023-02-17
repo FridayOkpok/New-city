@@ -1,0 +1,178 @@
+.service {
+  background-color: rgba(245, 217, 14, 0.07);
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  padding: 0;
+}
+
+.service .service-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0px;
+  width: 100%;
+}
+
+.service .service-container .service-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  width: 95%;
+}
+
+.service .service-container .service-area .para {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.service .service-container .service-area .para p {
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 42px;
+  color: #020e12;
+  text-align: justified;
+  padding-right: 20px;
+  width: 90%;
+}
+
+.service .service-container .service-area .service-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 10rem;
+  width: 50%;
+}
+
+.service .service-container .service-area .service-text h1 {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  /* line-height: 58px; */
+  /* or 91% */
+
+  color: #242527;
+
+  padding: 0;
+  margin: 0;
+}
+
+.service .service-container .service-area .service-text h5 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 58px;
+  /* or 161% */
+
+  /* primary */
+  color: #391cee;
+  margin: 0;
+  width: 50%;
+  padding: 0;
+}
+
+.service .service-container .service-area .service-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  font-size: x-large;
+  padding: 5px 10px;
+  font-weight: 600;
+}
+
+.service .service-container .move-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 90%;
+  padding: 20px;
+  align-items: center;
+  margin: 1rem;
+  gap: 10px;
+}
+
+.service .service-container .move-container .move-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 30px;
+
+  gap: 70px;
+
+  width: 385px;
+  height: 476px;
+
+  background: #fbfeff;
+
+  /* text */
+  border: 2px solid #020e12;
+  border-radius: 7.65086px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.service .service-container .move-container .move-item:hover {
+  background-color: blue;
+}
+
+.service .service-container .move-container .move-item h5 {
+  width: 258px;
+  height: 105px;
+
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48.9655px;
+  line-height: 44px;
+
+  margin: 0;
+  text-align: center;
+
+  color: #000000;
+}
+
+.service .service-container .move-container .move-item p {
+  width: 321px;
+
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20.2414px;
+  line-height: 24px;
+  /* or 196% */
+
+  text-align: center;
+  letter-spacing: 0.114763px;
+
+  /* text */
+
+  color: #020e12;
+}
+.service .service-container .move-container .move-item .btn-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12.2414px 18.3621px;
+  gap: 7.65px;
+
+  width: 106.72px;
+  height: 20.48px;
+
+  /* primary */
+
+  background: #391cee;
+  border-radius: 3.82543px;
+}

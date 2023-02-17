@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import HomeContainer from "../component/home/HomeContainer";
 import SponsorLogo from "../component/home/logoArea";
+import OurService from "../component/OurService/OurService";
 
 function Home() {
   const targetRef = useRef(null);
@@ -27,6 +28,7 @@ function Home() {
       <HomeContainer />
       <div ref={targetRef}>
         <SponsorLogo />
+        <OurService />
       </div>
     </div>
   );

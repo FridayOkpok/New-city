@@ -26,11 +26,10 @@
 
 .container-1 .container-content {
   margin-top: 3.5rem;
-  height: 100vh;
+  height: fit-content;
 }
 
 .container-1 .container-content h2 {
-  /* here i will change the color to white when i insert picture*/
   padding: 0 10px;
   margin-left: 2rem;
   font-family: Josefin Sans;
@@ -77,10 +76,3 @@
     display: none;
   }
 }
-
-/* fetch(`https://restcountries.com/v2/name/${countryName}?fullText=true`)
-  .then((response) => response.json())
-  .then((data) => {
-    const states = data[0].subdivision;
-    console.log(states);
-  }); */
