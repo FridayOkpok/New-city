@@ -1,6 +1,11 @@
 import React from "react";
 import "./ourservice.css";
-
+import {
+  BsBriefcaseFill,
+  BsBookmarkCheckFill,
+  BsClockFill,
+  BsSafeFill,
+} from "react-icons/bs";
 function OurService() {
   return (
     <>
@@ -70,6 +75,40 @@ function OurService() {
               <h5>Why choose us!</h5>
             </div>
           </div>
+          {/* <div className="other-info">
+            <div className="other-info-container">
+              <BsBriefcaseFill className="icons" />
+              <h4>Experience</h4>
+              <p>
+                {" "}
+                Our experience of 25 years of building and making achievements
+                in the world of development.{" "}
+              </p>
+            </div>
+            <div className="other-info-container">
+              <BsBookmarkCheckFill className="icons" />
+              <h4>Competitive Price</h4>
+              <p>
+                {" "}
+                The price we offer you are very competitive without reducing the
+                quality of the company's work in the slightest.
+              </p>
+            </div>
+            <div className="other-info-container">
+              <BsClockFill className="icons" />
+              <h4>On Time</h4>
+              <p>we prioritize the quality of our work and finish it on time /</p>
+            </div>
+            <div className="other-info-container">
+              <BsSafeFill className="icons" />
+              <h4>Secuity</h4>
+              <p>
+                {" "}
+                Our experience of 25 years of building and making achievements
+                in the world of development{" "}
+              </p>
+            </div>
+          </div> */}
         </div>
       </div>
     </>

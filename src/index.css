@@ -89,3 +89,12 @@ input {
   border-radius: 5px;
   width: 180px;
 }
+
+.icons {
+  font-size: 50px;
+  width: 60px;
+  border: 20px solid #565bdf0f;
+  color: white;
+  background-color: #565bdf;
+  border-radius: 50%;
+}
