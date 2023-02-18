@@ -75,7 +75,7 @@ function OurService() {
               <h5>Why choose us!</h5>
             </div>
           </div>
-          {/* <div className="other-info">
+          <div className="other-info">
             <div className="other-info-container">
               <BsBriefcaseFill className="icons" />
               <h4>Experience</h4>
@@ -97,7 +97,9 @@ function OurService() {
             <div className="other-info-container">
               <BsClockFill className="icons" />
               <h4>On Time</h4>
-              <p>we prioritize the quality of our work and finish it on time /</p>
+              <p>
+                we prioritize the quality of our work and finish it on time /
+              </p>
             </div>
             <div className="other-info-container">
               <BsSafeFill className="icons" />
@@ -108,7 +110,7 @@ function OurService() {
                 in the world of development{" "}
               </p>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </>
