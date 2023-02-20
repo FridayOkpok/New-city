@@ -1,0 +1,64 @@
+.operations {
+  padding: 20px 70px;
+}
+
+.operations .operation-text {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.operations .operation-text h4 {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 64px;
+  /* identical to box height */
+
+  color: #242527;
+
+  /* clearing default margin */
+  margin: 0;
+}
+
+.operations .operation-text h6 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  /* identical to box height */
+
+  /* primary */
+
+  color: #391cee;
+
+  margin: 0;
+}
+
+.operations .operation-image {
+  position: relative;
+  background: url(./R13.png), #d9d9d9;
+  max-width: 1000px;
+  height: 400px;
+  margin: 2rem 0;
+  margin-left: 4rem;
+}
+
+.operations .operation-image img {
+  position: absolute;
+  top: 7rem;
+  right: 30%;
+  display: flex;
+  height: 10rem;
+}
+
+@media screen and (max-width: 450px) {
+  .operations .operation-image img {
+    right: 20%;
+    height: 8rem;
+  }
+}
