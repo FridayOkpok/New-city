@@ -4,6 +4,7 @@ import SponsorLogo from "../component/home/logoArea";
 import OurService from "../component/OurService/OurService";
 import Operations from "../component/operation/Operation";
 import AboutNewCity from "../component/about/aboutNewCity";
+import Testimonies from "../component/testimonies/testimonies";
 
 function Home() {
   const targetRef = useRef(null);
@@ -33,6 +34,7 @@ function Home() {
         <OurService />
         <Operations />
         <AboutNewCity />
+        <Testimonies />
       </div>
     </div>
   );

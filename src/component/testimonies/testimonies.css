@@ -1,0 +1,278 @@
+.testimonies {
+  background-color: rgba(245, 217, 14, 0.07);
+}
+
+.testimonies .peoples-container {
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.testimonies .peoples-container .people-testimonies {
+  display: flex;
+  gap: 20px;
+}
+
+.testimonies .peoples-container .people-testimonies .people-col1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.testimonies .peoples-container .people-testimonies .people-col1 .user1 {
+  border-radius: 10px 10px 50px 10px;
+}
+
+.testimonies
+  .peoples-container
+  .people-testimonies
+  .people-col1
+  .user1
+  .user-testimonie-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+}
+
+.testimonies
+  .peoples-container
+  .people-testimonies
+  .people-col1
+  .user1
+  .user-testimonie-top
+  .userprofile {
+  font-size: 70px;
+  border-radius: 50%;
+}
+
+.testimonies
+  .peoples-container
+  .people-testimonies
+  .people-col1
+  .user1
+  .user-testimonie-top
+  .userprofile
+  .user-name-status
+  h6 {
+  width: 128px;
+  height: 20px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  letter-spacing: 0.15px;
+
+  /* neutral */
+
+  color: #fbfeff;
+}
+
+.testimonies .peoples-container .people-testimonies .people-col1 .user2 {
+  border-radius: 10px 50px 10px 10px;
+}
+
+.testimonies
+  .peoples-container
+  .people-testimonies
+  .people-col2
+  .user3
+  .user-testimonie-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.testimonies
+  .peoples-container
+  .people-testimonies
+  .people-col2
+  .user4
+  .user-testimonie-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.testimonies
+  .peoples-container
+  .people-testimonies
+  .people-col1
+  .user2
+  .user-testimonie-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.testimonies
+  .peoples-container
+  .people-testimonies
+  .people-col1
+  .user2
+  .user-testimonie-top
+  .userprofile {
+  font-size: 70px;
+  border-radius: 50%;
+}
+
+.testimonies .peoples-container .people-testimonies .people-col2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10rem;
+}
+
+.testimonies .peoples-container .people-testimonies .people-col2 .user3 {
+  border-radius: 10px 10px 10px 50px;
+}
+
+.testimonies .peoples-container .people-testimonies .people-col2 .user4 {
+  border-radius: 50px 10px 10px 10px;
+}
+
+.user-name-status h4 {
+  width: 128px;
+  height: 20px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+
+  color: #fbfeff;
+}
+
+.user-name-status h6 {
+  width: 81px;
+  height: 20px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+
+  letter-spacing: 0.15px;
+
+  /* neutral */
+  color: #fbfeff;
+}
+
+.user-bottom p {
+  /* font-family: Montserrat; */
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  text-align: justify;
+}
+
+.user-bottom .rating {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  gap: 4.5px;
+}
+
+.testimonies-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 10px 40px;
+}
+
+.testimonies-text .testimonies-text-top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.testimonies-text .testimonies-text-top h5 {
+  font-family: Josefin Sans;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+}
+
+.testimonies-text .testimonies-text-top h4 {
+  font-family: Montserrat;
+  font-size: 37px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.testimonies .testimonies-text-bottom p {
+  /*  */
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.15000000596046448px;
+  text-align: justified;
+}
+
+.testimonies .testimonies-text-bottom .testimonies-bottom-bt {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.testimonies .testimonies-text-bottom .testimonies-bottom-bt h2 {
+  /*  */
+  font-family: Josefin Sans;
+  font-size: 53px;
+  font-weight: 700;
+  line-height: 49px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #f5d90e;
+}
+
+.testimonies .testimonies-text-bottom .testimonies-bottom-bt p {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  text-align: justified;
+}
+
+@media screen and (max-width: 861px) {
+  .testimonies .peoples-container {
+    display: inline-block;
+    padding: 20px 0px;
+  }
+  .testimonies .peoples-container .people-testimonies {
+    display: flex;
+    gap: 20px;
+    padding: 10px 30px;
+  }
+  .testimonies-text {
+    width: 100%;
+    padding: 10px 10px;
+  }
+}
