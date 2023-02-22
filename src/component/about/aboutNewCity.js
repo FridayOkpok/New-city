@@ -31,7 +31,6 @@ function AboutNewCity() {
   }, [currentIndex, theImage.length]);
 
   const dotActiveClass = `dot dot${currentIndex}`;
-  console.log(dotActiveClass);
 
   return (
     <>

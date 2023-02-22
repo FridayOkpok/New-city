@@ -133,3 +133,18 @@ input {
 .star {
   color: #f5d90e;
 }
+
+.socials {
+  padding: 0px;
+  gap: 16px;
+
+  width: 50px;
+  height: 30px;
+}
+/* 
+.facebook {
+  fill: blue;
+  border-radius: 70%;
+  object-fit: cover;
+  background: transparent;
+} */

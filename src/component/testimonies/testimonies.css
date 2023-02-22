@@ -266,11 +266,13 @@
     display: inline-block;
     padding: 20px 0px;
   }
+
   .testimonies .peoples-container .people-testimonies {
     display: flex;
     gap: 20px;
     padding: 10px 30px;
   }
+
   .testimonies-text {
     width: 100%;
     padding: 10px 10px;
