@@ -1,10 +1,9 @@
 .fotter-container {
   background-color: #391cee;
-  width: 95%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 20px 50px;
+  padding: 20px 20px;
   margin-top: 10px;
   gap: 40px;
 }
@@ -82,5 +81,27 @@
 
 .fotter-container .fotter-col2 .fotter-col5 .icon-container .icon-col1 {
   display: flex;
-  gap: 20px;
+  gap: 10px;
+}
+
+@media screen and (max-width: 651px) {
+  .fotter-container .fotter-col1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .fotter-container {
+    background-color: #391cee;
+    width: 95%;
+    display: inline-block;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .fotter-container .fotter-col2 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    /* gap: 20px; */
+  }
 }
