@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 20px 20px;
+  padding: 50px 10px;
   margin-top: 10px;
   gap: 40px;
 }
@@ -37,10 +37,6 @@
   text-align: left;
 }
 
-.fotter-container .fotter-col1 .col1-item h4 {
-  /* for the get in touch text  */
-}
-
 .fotter-container .fotter-col2 {
   display: flex;
   justify-content: space-between;
@@ -50,7 +46,6 @@
 .fotter-container .fotter-col2 .fotter-col3 {
   display: flex;
   flex-direction: column;
-  /* justify-content: ; */
   align-items: flex-start;
   gap: 5px;
 }
@@ -58,16 +53,12 @@
 .fotter-container .fotter-col2 .fotter-col4 {
   display: flex;
   flex-direction: column;
-  /* justify-content: ; */
   align-items: flex-start;
   gap: 5px;
 }
 
 .fotter-container .fotter-col2 .fotter-last {
   display: flex;
-  /* flex-direction: column; */
-  background-color: red;
-  /* justify-content: ; */
   align-items: flex-start;
   gap: 5px;
 }
@@ -76,7 +67,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* gap: 20px; */
 }
 
 .fotter-container .fotter-col2 .fotter-col5 .icon-container .icon-col1 {
@@ -102,6 +92,5 @@
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
-    /* gap: 20px; */
   }
 }

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import "./aboutnewcity.css";
 import Property1 from "./Property1.png";
 import Property2 from "./Property2.png";
@@ -10,6 +11,12 @@ import Property7 from "./Property7.png";
 import Property8 from "./Property8.png";
 
 function AboutNewCity() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const path = location.pathname;
+  let text;
+
   const [theImage, settheImage] = useState([
     Property1,
     Property2,
@@ -22,6 +29,12 @@ function AboutNewCity() {
   ]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  if (path === "/about") {
+    text = " ";
+  } else {
+    text = " See More ...";
+  }
+
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentIndex((currentIndex + 1) % theImage.length);
@@ -31,6 +44,10 @@ function AboutNewCity() {
   }, [currentIndex, theImage.length]);
 
   const dotActiveClass = `dot dot${currentIndex}`;
+
+  function onChnageToAboutParamsHandeler() {
+    navigate("about");
+  }
 
   return (
     <>
@@ -49,10 +66,10 @@ function AboutNewCity() {
               <br />
               Our team of expert movers and state-of-the-art equipment ......{" "}
               <br />
-              <strong>
+              <strong onClick={onChnageToAboutParamsHandeler}>
                 {" "}
                 <br />
-                See More ...{" "}
+                {text}
               </strong>
             </p>
           </div>
@@ -63,16 +80,6 @@ function AboutNewCity() {
             alt={`Logo ${currentIndex + 1}`}
             style={{ width: "100%", height: "400px" }}
           />
-
-          <div className="dot-container">
-            <div className={dotActiveClass}> </div>
-            <div className={dotActiveClass}> </div>
-            <div className={dotActiveClass}> </div>
-            <div className={dotActiveClass}> </div>
-            <div className={dotActiveClass}> </div>
-            <div className={dotActiveClass}> </div>
-            <div className={dotActiveClass}> </div>
-          </div>
         </div>
       </div>
     </>

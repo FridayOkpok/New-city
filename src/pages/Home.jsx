@@ -6,7 +6,6 @@ import Operations from "../component/operation/Operation";
 import AboutNewCity from "../component/about/aboutNewCity";
 import Testimonies from "../component/testimonies/testimonies";
 import SendMail from "../component/testimonies/emailSection/emailInput";
-import Fotter from "../component/fotter/Fotter";
 
 function Home() {
   const targetRef = useRef(null);
@@ -32,8 +31,6 @@ function Home() {
     };
   }, [current]);
 
-  console.log(isIntersecting);
-
   return (
     <div>
       <div ref={targetRef}>
@@ -45,7 +42,6 @@ function Home() {
       <AboutNewCity />
       <Testimonies />
       <SendMail />
-      <Fotter />
     </div>
   );
 }

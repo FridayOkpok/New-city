@@ -5,6 +5,10 @@ body {
     sans-serif;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 html {
   padding: 0;
   margin: 0;
@@ -21,12 +25,43 @@ h6 {
   margin: 0;
 }
 
-ul {
+ul,
+a {
   list-style-type: none;
 }
 
 Link {
   border-radius: 50%;
+}
+
+.notactive {
+  color: black;
+  text-decoration: none;
+}
+
+.active {
+  color: #391cee;
+  border: none;
+}
+
+.about {
+  margin-top: 7rem;
+  height: 100vh;
+  animation: opacity-in 3s ease forwards;
+}
+@media screen and (max-width: 840px) {
+  .about {
+    height: fit-content;
+  }
+}
+
+@keyframes opacity-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .topper {

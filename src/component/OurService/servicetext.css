@@ -1,0 +1,83 @@
+.about-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* gap: 20px; */
+
+  width: 100%;
+}
+
+.about-area .about-p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-area .about-p p {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 450;
+  line-height: 40px;
+  color: #020e12;
+  text-align: center;
+  /* padding-right: 20px; */
+  text-align: center;
+  width: 90%;
+}
+
+.about-area .about-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* height: 13rem; */
+  padding: 2px 5px;
+
+  /* width: 50%; */
+}
+
+.about-area .about-text h1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  /* line-height: 58px; */
+  /* or 91% */
+
+  color: #242527;
+
+  padding: 0;
+  margin: 0;
+}
+
+.about-area .service-text h5 {
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 58px;
+  /* or 161% */
+
+  /* primary */
+  color: #391cee;
+  margin: 0;
+  padding: 0;
+}
+
+.about-area .about-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  padding: 5px 10px;
+  font-weight: 600;
+}
