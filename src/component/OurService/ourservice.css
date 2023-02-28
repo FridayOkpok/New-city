@@ -211,7 +211,7 @@
 
 .service-container .other-info .other-info-container h4 {
   width: 258px;
-  height: 105px;
+  /* height: 105px; */
 
   font-family: "Josefin Sans";
   font-style: normal;
@@ -226,15 +226,14 @@
 }
 
 .service-container .other-info .other-info-container p {
-  width: 321px;
+  width: 301px;
   height: 100px;
 
   font-family: "Josefin Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 20.2414px;
-  line-height: 24px;
-  /* or 196% */
+  line-height: 44px;
 
   text-align: center;
   letter-spacing: 0.114763px;

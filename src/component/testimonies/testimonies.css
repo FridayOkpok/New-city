@@ -3,15 +3,18 @@
 }
 
 .testimonies .peoples-container {
-  padding: 20px;
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-around;
   align-items: center;
+  width: 100%;
+  gap: 10px;
 }
 
 .testimonies .peoples-container .people-testimonies {
   display: flex;
   gap: 20px;
+  width: 70%;
+  justify-content: flex-end;
 }
 
 .testimonies .peoples-container .people-testimonies .people-col1 {
@@ -195,8 +198,10 @@
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
-  width: 100%;
-  padding: 10px 40px;
+  width: 50%;
+  padding: 10px 0 10px 20px;
+  gap: 50px;
+  /* text-align: right; */
 }
 
 .testimonies-text .testimonies-text-top {
@@ -226,15 +231,22 @@
   text-align: left;
 }
 
+.testimonies .testimonies-text-bottom {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+
 .testimonies .testimonies-text-bottom p {
   /*  */
   font-family: Montserrat;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0.15000000596046448px;
+  letter-spacing: 0.25000000596046448px;
   text-align: justified;
-  max-width: 400px;
+  max-width: 360px;
 }
 
 .testimonies .testimonies-text-bottom .testimonies-bottom-bt {
@@ -242,6 +254,7 @@
   align-items: center;
   gap: 20px;
   max-width: 350px;
+  height: 70px;
 }
 
 .testimonies .testimonies-text-bottom .testimonies-bottom-bt h2 {
@@ -264,10 +277,9 @@
   text-align: justified;
 }
 
-@media screen and (max-width: 861px) {
+@media screen and (max-width: 958px) {
   .testimonies .peoples-container {
     display: inline-block;
-    padding: 20px 0px;
   }
 
   .testimonies .peoples-container .people-testimonies {
@@ -277,8 +289,11 @@
   }
 
   .testimonies-text {
-    width: 100%;
-    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto;
   }
 }
 
