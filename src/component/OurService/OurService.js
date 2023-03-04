@@ -1,11 +1,10 @@
 import React from "react";
 import "./ourservice.css";
-import {
-  BsBriefcaseFill,
-  BsBookmarkCheckFill,
-  BsClockFill,
-  BsSafeFill,
-} from "react-icons/bs";
+
+import experienced from "./exp.png";
+import price from "./price.png";
+import time from "./time.png";
+import security from "./security.png";
 
 function OurService() {
   return (
@@ -78,7 +77,7 @@ function OurService() {
           </div>
           <div className="other-info">
             <div className="other-info-container">
-              <BsBriefcaseFill className="icons" />
+              <img src={experienced} alt="imageexperience" />
               <h4>Experience</h4>
               <p>
                 {" "}
@@ -87,7 +86,7 @@ function OurService() {
               </p>
             </div>
             <div className="other-info-container">
-              <BsBookmarkCheckFill className="icons" />
+              <img src={price} alt="imageexperience" />
               <h4>Competitive Price</h4>
               <p>
                 {" "}
@@ -96,14 +95,14 @@ function OurService() {
               </p>
             </div>
             <div className="other-info-container">
-              <BsClockFill className="icons" />
+              <img src={time} alt="imageexperience" />
               <h4>On Time</h4>
               <p>
                 we prioritize the quality of our work and finish it on time /
               </p>
             </div>
             <div className="other-info-container">
-              <BsSafeFill className="icons" />
+              <img src={security} alt="imageexperience" />
               <h4>Secuity</h4>
               <p>
                 {" "}

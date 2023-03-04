@@ -1,6 +1,6 @@
 import React from "react";
 import "./fotter.css";
-import logo from "../../component/NavBar/logo.jpg";
+import logo from "./logo.png";
 import { BsFacebook, BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
 
 function Fotter() {

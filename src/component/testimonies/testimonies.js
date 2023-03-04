@@ -1,6 +1,10 @@
 import React from "react";
 import "./testimonies.css";
-import { BsPerson, BsStarFill } from "react-icons/bs";
+import { BsStarFill } from "react-icons/bs";
+import user1 from "./Ellipse.png";
+import user2 from "./Ellipse1.png";
+import user3 from "./Ellipse2.png";
+import user4 from "./Ellipse3.png";
 
 function Testimonies() {
   return (
@@ -11,7 +15,7 @@ function Testimonies() {
             <div className="people-col1">
               <div className="user user1">
                 <div className="user-testimonie-top">
-                  <BsPerson className="userprofile" />
+                  <img src={user1} alt="userdp" />
                   <div className="user-name-status">
                     <h4> Ralph </h4>
                     <h6> Researcher </h6>
@@ -34,7 +38,7 @@ function Testimonies() {
               </div>
               <div className="user user2">
                 <div className="user-testimonie-top">
-                  <BsPerson className="userprofile" />
+                  <img src={user2} alt="userdp" />
                   <div className="user-name-status">
                     <h4> Ralph </h4>
                     <h6> Researcher </h6>
@@ -59,7 +63,7 @@ function Testimonies() {
             <div className="people-col2">
               <div className="user user3">
                 <div className="user-testimonie-top">
-                  <BsPerson className="userprofile" />
+                  <img src={user3} alt="userdp" />
                   <div className="user-name-status">
                     <h4> Ralph </h4>
                     <h6> Researcher </h6>
@@ -82,7 +86,7 @@ function Testimonies() {
               </div>
               <div className="user user4">
                 <div className="user-testimonie-top">
-                  <BsPerson className="userprofile" />
+                  <img src={user4} alt="userdp" />
                   <div className="user-name-status">
                     <h4> Ralph </h4>
                     <h6> Researcher </h6>
