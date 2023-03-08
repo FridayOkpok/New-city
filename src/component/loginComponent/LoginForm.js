@@ -5,21 +5,98 @@ import Google from "./Google.png";
 
 function LoginForm({ setImage }) {
   const [userHasAccount, setUserHasAccount] = useState(true);
+  const [emailInput, setEmailInput] = useState(" ");
+  const [passwordInput, setPasswordInput] = useState(" ");
+  const [isLoading, setIsLoading] = useState(false);
+
+  function onChangeEmailHandeler(event) {
+    setEmailInput(event.target.value);
+  }
+
+  function onChangePasswordHandeler(event) {
+    setPasswordInput(event.target.value);
+  }
 
   function onLoginHandeler() {
     setUserHasAccount((previous) => !previous);
     setImage(userHasAccount);
   }
 
+  let url;
+  let text;
+  let sucmeg;
+  function submitFormHandeler() {
+    setIsLoading(true);
+    if (userHasAccount) {
+      console.log("login");
+
+      sucmeg = "Login Sucessfull";
+
+      //
+      url =
+        "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAlWveUg0aFYUGO0w96K2DpgK3v6-z8a20";
+      text = "pls register";
+      sucmeg = "Registration Sucessfull";
+    } else {
+      console.log("gister");
+      text = "pls login";
+
+      url =
+        "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyAlWveUg0aFYUGO0w96K2DpgK3v6-z8a20";
+    }
+
+    const req = fetch(url, {
+      method: "POST",
+      body: JSON.stringify({
+        email: emailInput,
+        password: passwordInput,
+        returnSecureToken: true,
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+
+    const data = req.then((response) => {
+      if (response.ok) {
+        const res = response.json();
+        console.log(res);
+        setIsLoading(false);
+        alert(`${sucmeg}`);
+        return res;
+      } else {
+        response.json().then((data) => {
+          setIsLoading(false);
+          alert(`error ${data.error.code} ${data.error.message} ${text} `);
+        });
+      }
+    });
+  }
+
   return (
     <>
       <div className="loginform-container">
         <div className="inputContainer">
-          <input type="mail" className="input-text" placeholder="EMAIL" />
-          {userHasAccount && (
-            <input type="mail" className="input-text" placeholder="PASSWORD" />
-          )}
-          <span>{`${userHasAccount ? `Log In ` : `Create Account`}`}</span>
+          {isLoading && <h2> Loading </h2>}
+          <input
+            type="mail"
+            className="input-text"
+            placeholder="EMAIL"
+            value={emailInput}
+            onChange={onChangeEmailHandeler}
+          />
+
+          <input
+            type="mail"
+            className="input-text"
+            placeholder="PASSWORD"
+            value={passwordInput}
+            onChange={onChangePasswordHandeler}
+          />
+
+          <span onClick={submitFormHandeler}>{`${
+            userHasAccount ? `Log In ` : `Create Account`
+          }`}</span>
         </div>
         {userHasAccount && <h4> forgot your password ?</h4>}
         <div className="orlogin">
