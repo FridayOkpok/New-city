@@ -1,0 +1,12 @@
+.moved-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 30px 10px; */
+
+  /* Auto layout */
+  padding: 12px 120px;
+  gap: 24px;
+
+  background: rgba(187, 179, 234, 0.22);
+}

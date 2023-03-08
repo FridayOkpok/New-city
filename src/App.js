@@ -10,6 +10,9 @@ import Layout from "./props/Layout";
 import About from "./pages/About/About";
 import Service from "./pages/Services/Service";
 import Contact from "./pages/Contact/Contact";
+import { useSelector } from "react-redux";
+import OverLay from "./props/OverLay";
+import LoginComponent from "./component/loginComponent/LoginArea";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -22,7 +25,19 @@ const router = createBrowserRouter(
   )
 );
 function App() {
-  return <RouterProvider router={router} />;
+  const loginIsShowing = useSelector((store) => store.Login);
+
+  return (
+    <>
+      {loginIsShowing && (
+        <div>
+          <OverLay />
+          <LoginComponent />
+        </div>
+      )}
+      <RouterProvider router={router} />;
+    </>
+  );
 }
 
 export default App;

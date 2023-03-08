@@ -10,7 +10,7 @@ import Property6 from "./Property6.png";
 import Property7 from "./Property7.png";
 import Property8 from "./Property8.png";
 
-function AboutNewCity() {
+function AboutNewCity({ color }) {
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -51,7 +51,10 @@ function AboutNewCity() {
 
   return (
     <>
-      <div className="aboutContainer">
+      <div
+        className="aboutContainer"
+        style={{ backgroundColor: `${color ? color : ``}` }}
+      >
         <div className="about-text">
           <div className="about-text-top">
             <h4> About NewCity</h4>

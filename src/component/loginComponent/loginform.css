@@ -1,0 +1,203 @@
+.loginform-container {
+  background: #ffffff;
+  box-shadow: 0px 24px 38px 3px rgba(0, 0, 0, 0.14);
+  height: 702px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  gap: 25.64px;
+}
+
+.loginform-container .inputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 25.64px;
+
+  width: 95%;
+}
+
+.loginform-container .inputContainer input {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 11.3699px 7.0959px;
+  gap: 10.68px;
+
+  width: 90.5%;
+  height: 30.74px;
+
+  border: 1.06849px solid rgba(2, 14, 18, 0.4);
+  border-radius: 5.34247px;
+}
+
+.loginform-container .inputContainer span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 11.3699px 7.0959px;
+  gap: 10.68px;
+
+  width: 90.5%;
+  height: 30.74px;
+
+  /* primary */
+
+  background: #391cee;
+  border-radius: 5.34247px;
+}
+
+.loginform-container h4 {
+  width: 203px;
+  height: 26px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17.0959px;
+  line-height: 26px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.160274px;
+
+  /* primary */
+
+  color: #391cee;
+}
+
+.loginform-container .orlogin {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 0;
+  gap: 25.64px;
+
+  width: 95%;
+  height: 26px;
+}
+
+.loginform-container .orlogin .line1 {
+  width: 104.71px;
+  height: 0px;
+
+  border: 1.06849px solid #000000;
+}
+.loginform-container .orlogin h5 {
+  width: 97px;
+  height: 26px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.9589px;
+  line-height: 26px;
+  /* identical to box height, or 171% */
+
+  letter-spacing: 0.160274px;
+
+  color: #000000;
+}
+
+.loginform-container .orlogin .line2 {
+  width: 104.71px;
+  height: 0px;
+
+  border: 1.06849px solid #000000;
+}
+
+.loginform-container .socialmedia-handeler {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 19.23px;
+
+  width: 363.29px;
+  height: 68.38px;
+}
+
+.loginform-container .socialmedia-handeler .facebookicons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12.8219px 17.0959px;
+  gap: 8.55px;
+
+  width: 172.03px;
+  height: 50.38px;
+
+  border: 1.06849px solid rgba(2, 14, 18, 0.4);
+  border-radius: 5.34247px;
+}
+
+.loginform-container .socialmedia-handeler .googleicons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12.8219px 17.0959px;
+  gap: 8.55px;
+
+  width: 172.03px;
+  height: 50.38px;
+
+  border: 1.06849px solid rgba(2, 14, 18, 0.4);
+  border-radius: 5.34247px;
+}
+
+.loginform-container p {
+  width: 90%;
+  height: 26px;
+  padding: 10px 0;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17.0959px;
+  line-height: 26px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.160274px;
+
+  color: #000000;
+}
+
+.loginform-container p span {
+  color: #391cee;
+}
+
+@media screen and (max-width: 1061px) {
+  .loginform-container {
+    width: 95%;
+    gap: 25.64px;
+  }
+  .loginform-container .socialmedia-handeler {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 674px) {
+  .loginform-container .socialmedia-handeler {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 446px) {
+  .loginform-container {
+    width: 100%;
+    gap: 25.64px;
+  }
+}

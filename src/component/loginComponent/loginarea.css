@@ -1,0 +1,71 @@
+.login {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  border-radius: 10.6849px;
+  width: 70%;
+  /* height: ; */
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  bottom: 50%;
+
+  transform: translate(-50%, -50%);
+  animation: rightMove 2s ease forwards;
+  /* gap: 30px; */
+  z-index: 900;
+}
+
+@keyframes rightMove {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.login-container {
+  display: flex;
+  height: 702px;
+  width: 40%;
+}
+
+.login-container .login-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+.login-container .login-left .left-textarea h4 {
+  font-family: Josefin Sans;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fbfeff;
+}
+
+.login-container .login-left .left-textarea h5 {
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #f5d90e;
+}
+
+@media screen and (max-width: 1061px) {
+  .login-container {
+    display: none;
+  }
+  .login-container .login-left {
+    display: none;
+    background-image: none;
+  }
+}

@@ -35,7 +35,6 @@
 }
 
 .sendmail-container p {
-  /*  */
   font-family: Montserrat;
   font-size: 16px;
   font-weight: 500;
@@ -52,9 +51,7 @@
 }
 
 .sendmail-container .sendmail-bottom h6 {
-  /*  */
   height: 30px;
-  width: 90px;
 
   border-radius: 5px;
   padding: 2px 24px;
@@ -66,4 +63,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.sendmail-container .sendmail-bottom .sendmail-emailinput {
+ background: #FBFEFF;
+border: 2px solid #020E12;
+width: 334px;
+height: 52px;
 }

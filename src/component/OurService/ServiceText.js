@@ -1,11 +1,11 @@
 import React from "react";
 import "./servicetext.css";
 
-function ServiceText() {
+function ServiceText({ header }) {
   return (
     <div className="about-area">
       <div className="about-text">
-        <h1>Our Service</h1>
+        <h1>{header}</h1>
       </div>
       <div className="about-p">
         <p className="about-about">

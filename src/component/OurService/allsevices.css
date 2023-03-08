@@ -1,0 +1,60 @@
+.all-servicescontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  height: 586px;
+
+  border-radius: 0px;
+}
+
+.all-servicescontainer .all-servicetext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 550px;
+}
+
+.all-servicescontainer .all-servicetext h4 {
+  font-family: Josefin Sans;
+  font-size: 49px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0em;
+  color: #000000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.all-servicescontainer .all-servicetext .text-area p {
+  height: 159px;
+  height: 100%;
+  left: 7px;
+  top: 102px;
+  border-radius: nullpx;
+  text-align: justify;
+  letter-spacing: 0.114763px;
+
+  /* text */
+  padding: 0 70px;
+  color: #020e12;
+}
+
+.all-servicescontainer .img-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 550px;
+  padding: 20px;
+}
+
+.all-servicescontainer .img-section img {
+  display: flex;
+  /* justify-content:center */
+  align-items: center;
+  width: 100%;
+}
