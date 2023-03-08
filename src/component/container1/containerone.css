@@ -25,7 +25,7 @@
 }
 
 .container-1 .container-content {
-  margin-top: 3.5rem;
+  margin-top: 4rem;
   height: fit-content;
 }
 
@@ -80,5 +80,34 @@
 @media screen and (max-width: 818px) {
   .containpics {
     height: fit-content;
+  }
+  .container-1 .container-content h2 {
+    padding: 0 10px;
+    margin-left: 2rem;
+    font-family: Josefin Sans;
+    color: #fbfeff;
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 44px;
+    font-weight: 300;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+    max-width: 420px;
+  }
+  .container-1 .container-content p {
+    font-family: Josefin Sans;
+    font-size: 15px;
+    margin-left: 1rem;
+
+    font-weight: 300;
+    color: #fbfeff;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+    padding: 2px;
+    line-height: 27px;
+    max-width: 420px;
+    padding: 0 10px;
+    letter-spacing: 0.15000000596046448px;
+    text-align: justify;
   }
 }
