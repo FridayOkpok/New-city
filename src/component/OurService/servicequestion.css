@@ -152,7 +152,7 @@
 @media screen and (max-width: 809px) {
   .service-area {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
   }
@@ -170,27 +170,5 @@
   }
   .other-info {
     grid-template-columns: 1fr;
-  }
-
-  .service-area .service-text h1 {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 30px;
-  }
-
-  .service-area .service-text h5 {
-    justify-content: center;
-    align-items: center;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 48px;
-    /* or 161% */
-
-    /* primary */
-    color: #391cee;
-    margin: 0;
-    padding: 0;
   }
 }
