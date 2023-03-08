@@ -32,10 +32,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  height: 13rem;
-  padding: 2px 5px;
-
-  width: 50%;
+  height: 10rem;
 }
 
 .service-area .service-text h1 {
@@ -79,8 +76,7 @@
   align-items: center;
   width: 45%;
   font-size: x-large;
-  padding: 5px 10px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .other-info {
@@ -99,7 +95,7 @@
   padding: 10px;
   /* gap: 20px; */
 
-  height: 476px;
+  height: 356px;
 }
 
 .other-info .other-info-container h4 {
@@ -146,6 +142,11 @@
   .other-info {
     grid-template-columns: 1fr 1fr;
   }
+  .other-info {
+    padding: 5px;
+    margin: 0.5rem;
+    gap: 5px;
+  }
 }
 
 @media screen and (max-width: 809px) {
@@ -169,5 +170,27 @@
   }
   .other-info {
     grid-template-columns: 1fr;
+  }
+
+  .service-area .service-text h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+  }
+
+  .service-area .service-text h5 {
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 48px;
+    /* or 161% */
+
+    /* primary */
+    color: #391cee;
+    margin: 0;
+    padding: 0;
   }
 }

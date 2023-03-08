@@ -201,4 +201,43 @@
     padding-left: 1rem;
     margin: 0 auto;
   }
+  .service-container .move-container .move-item h5 {
+    width: 258px;
+    height: 105px;
+
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 38.9655px;
+    line-height: 44px;
+
+    margin: 0;
+    text-align: center;
+
+    color: #000000;
+  }
+  .service-container .move-container .move-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+
+    gap: 40px;
+
+    width: 300px;
+    height: 366px;
+    /* background will be for image url for all the card boxes  */
+
+    background: #fbfeff;
+
+    /* text */
+    border: 2px solid #020e12;
+    border-radius: 7.65086px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
 }
