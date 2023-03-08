@@ -2,11 +2,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: rgba(187, 179, 234, 0.22);
   /* padding: 30px 10px; */
-
   /* Auto layout */
   padding: 12px 120px;
-  gap: 24px;
+  gap: 34px;
+  overflow: scroll;
+}
 
-  background: rgba(187, 179, 234, 0.22);
+.moved-container ::-webkit-scrollbar {
+  display: none;
 }

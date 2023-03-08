@@ -89,12 +89,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 12.2414px 18.3621px;
+  padding: 5px 18.3621px;
   gap: 7.65px;
 
   width: 106.72px;
-  height: 20.48px;
-
   /* primary */
 
   background: #391cee;
