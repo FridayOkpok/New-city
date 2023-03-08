@@ -13,6 +13,7 @@ function NavBar() {
   function onLoginHandeler() {
     window.scrollTo({ top: 0, behavior: "smooth" });
     dispatch(loginAction.togglePupUp());
+    onShowLoginHandelerFunction();
   }
 
   function onShowLoginHandelerFunction() {
