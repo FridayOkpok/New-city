@@ -61,3 +61,66 @@
   /* primary */
   background: #391cee;
 }
+
+.nav .nav-container .loginMenu {
+  position: absolute;
+  top: 6rem;
+  right: 10px;
+  padding: 5px 10px;
+  overflow: hidden;
+}
+
+.nav .nav-container .menubtn {
+  display: none;
+}
+
+.nav .nav-container .loginMenu .btn-area {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background: rgba(254, 253, 243, 0.7);
+  box-shadow: 0px 5px 33px rgba(185, 212, 237, 0.3);
+  padding: 30px 40px;
+  /* width: 300px; */
+  animation: easyin 2s ease-in-out;
+}
+
+@keyframes easyin {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.nav .nav-container .loginMenu .btn-area h4 {
+  cursor: pointer;
+}
+
+.nav .nav-container .loginMenu .btn-area .btn-login {
+  /* primary */
+  background: #391cee;
+}
+
+.nav .nav-container .loginMenu .btn-area .btn-signup {
+  /* primary */
+  width: 80px;
+}
+
+@media screen and (max-width: 590px) {
+  .nav .nav-container .menubtn {
+    display: inline-block;
+  }
+  .nav .nav-container .nav-btnarea {
+    display: none;
+  }
+
+  .nav .nav-container {
+    justify-content: space-between;
+    padding: 0 40px;
+    gap: 20px;
+  }
+}

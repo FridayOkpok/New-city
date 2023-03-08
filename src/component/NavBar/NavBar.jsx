@@ -1,16 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.css";
 import Logo from "./logo.jpg";
 import { NavLink } from "react-router-dom";
+import { BsMenuButtonFill } from "react-icons/bs";
 import { useDispatch } from "react-redux";
 import { loginAction } from "../../store/Store";
 
 function NavBar() {
+  const [showMenu, setShowMenu] = useState(false);
   const dispatch = useDispatch();
 
   function onLoginHandeler() {
     window.scrollTo({ top: 0, behavior: "smooth" });
     dispatch(loginAction.togglePupUp());
+  }
+
+  function onShowLoginHandelerFunction() {
+    setShowMenu((previous) => !previous);
   }
 
   return (
@@ -47,18 +53,29 @@ function NavBar() {
                 <h5>Service</h5>
               </li>
             </NavLink>
-            <NavLink
-              to="contact"
-              className={({ isActive }) => (isActive ? `active` : `notactive`)}
-              end
-            >
-              <li>
-                <h5>Contact</h5>
-              </li>
-            </NavLink>
           </ul>
         </div>
-        <div className="btn-area">
+        <BsMenuButtonFill
+          className="menubtn"
+          onClick={onShowLoginHandelerFunction}
+        />
+        {showMenu && (
+          <div className="loginMenu">
+            <div className="btn-area nav-btnarea">
+              <h4 onClick={onShowLoginHandelerFunction}>Hide</h4>
+
+              <div className="btn btn-login" onClick={onLoginHandeler}>
+                {" "}
+                Login{" "}
+              </div>
+              <div className="btn btn-signup" onClick={onLoginHandeler}>
+                {" "}
+                Sign-Up{" "}
+              </div>
+            </div>
+          </div>
+        )}
+        <div className="btn-area nav-btnarea">
           <div className="btn btn-login" onClick={onLoginHandeler}>
             {" "}
             Login{" "}

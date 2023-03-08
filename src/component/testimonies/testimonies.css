@@ -303,6 +303,24 @@
     font-size: 30px;
   }
 
+  .testimonies-text .testimonies-text-top {
+    justify-content: center;
+    align-items: center;
+  }
+  .testimonies .testimonies-text-bottom {
+    justify-content: center;
+    align-items: center;
+  }
+  .testimonies-text .testimonies-text-top h5 {
+    width: 800px;
+  }
+
+  .testimonies-text .testimonies-text-top h4 {
+    width: 400px;
+
+    text-align: left;
+  }
+
   .testimonies-text {
     display: flex;
     justify-content: center;
