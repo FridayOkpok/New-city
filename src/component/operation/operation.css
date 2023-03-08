@@ -1,5 +1,5 @@
 .operations {
-  padding: 20px;
+  padding: 20px 70px;
 }
 
 .operations .operation-text {
@@ -57,9 +57,6 @@
 }
 
 @media screen and (max-width: 450px) {
-  .operations {
-    padding: 20px 10px;
-  }
   .operations .operation-text h4 {
     font-weight: 300;
     font-size: 54px;
@@ -75,9 +72,5 @@
   .operations .operation-image img {
     right: 20%;
     height: 8rem;
-  }
-
-  .operations .operation-image {
-    width: 100%;
   }
 }
