@@ -4,7 +4,8 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin: 10px auto;
+  /* margin: 10px auto; */
+  width: 100%;
 }
 
 .sendmail-container .sendmail-top {
@@ -66,8 +67,26 @@
 }
 
 .sendmail-container .sendmail-bottom .sendmail-emailinput {
- background: #FBFEFF;
-border: 2px solid #020E12;
-width: 334px;
-height: 52px;
+  background: #fbfeff;
+  border: 2px solid #020e12;
+  width: 334px;
+  height: 52px;
+}
+
+@media screen and (max-width: 563px) {
+  .sendmail-container .sendmail-bottom {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .sendmail-container .sendmail-top h3 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+  }
 }

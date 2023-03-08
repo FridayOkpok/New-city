@@ -120,7 +120,8 @@
 }
 @media screen and (max-width: 620px) {
   .aboutContainer {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     margin: 1px auto;
     align-items: center;

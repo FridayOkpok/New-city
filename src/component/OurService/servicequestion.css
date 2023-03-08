@@ -149,6 +149,24 @@
 }
 
 @media screen and (max-width: 809px) {
+  .service-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .service-area .para {
+    width: 100%;
+  }
+
+  .service-area .para p {
+    width: 100%;
+  }
+
+  .service-area .service-text {
+    width: 100%;
+  }
   .other-info {
     grid-template-columns: 1fr;
   }

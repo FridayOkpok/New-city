@@ -279,11 +279,17 @@
 
 @media screen and (max-width: 958px) {
   .testimonies .peoples-container {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .testimonies .peoples-container .people-testimonies {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
     padding: 10px 30px;
   }
