@@ -60,7 +60,7 @@
   color: #f5d90e;
 }
 
-@media screen and (max-width: 1061px) {
+/* @media screen and (max-width: 1061px) {
   .login-container {
     display: none;
   }
@@ -68,4 +68,4 @@
     display: none;
     background-image: none;
   }
-}
+} */
