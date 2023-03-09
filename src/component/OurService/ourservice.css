@@ -201,7 +201,7 @@
     padding-left: 1rem;
     margin: 0 auto;
   }
-  .service-container .move-container .move-item h5 {
+  /* .service-container .move-container .move-item h5 {
     width: 258px;
     height: 105px;
 
@@ -227,17 +227,18 @@
 
     width: 300px;
     height: 366px;
-    /* background will be for image url for all the card boxes  */
+    background will be for image url for all the card boxes 
 
     background: #fbfeff;
 
-    /* text */
+    text
     border: 2px solid #020e12;
     border-radius: 7.65086px;
 
-    /* Inside auto layout */
+    Inside auto layout
     flex: none;
     order: 0;
     flex-grow: 0;
-  }
+    */
+  /* }  */
 }

@@ -68,7 +68,7 @@
     border-radius: 0px;
   }
 
-  .all-servicescontainer .all-servicetext h4 {
+  /* .all-servicescontainer .all-servicetext h4 {
     font-family: Josefin Sans;
     font-size: 39px;
     font-weight: 400;
@@ -79,7 +79,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+  } */
   .all-servicescontainer .all-servicetext {
     width: 100%;
   }

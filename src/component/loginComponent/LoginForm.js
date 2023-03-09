@@ -23,27 +23,20 @@ function LoginForm({ setImage }) {
   }
 
   let url;
-  let text;
   let sucmeg;
   function submitFormHandeler() {
     setIsLoading(true);
     if (userHasAccount) {
-      console.log("login");
 
       sucmeg = "Login Sucessfull";
-
       //
       url =
         "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAlWveUg0aFYUGO0w96K2DpgK3v6-z8a20";
-      text = "pls register";
-      sucmeg = "Registration Sucessfull";
-    } else {
-      console.log("gister");
-      text = "pls login";
-
-      url =
+      } else {
+        url =
         "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyAlWveUg0aFYUGO0w96K2DpgK3v6-z8a20";
-    }
+        sucmeg = "Registration Sucessfull";
+      }
 
     const req = fetch(url, {
       method: "POST",
@@ -67,7 +60,7 @@ function LoginForm({ setImage }) {
       } else {
         response.json().then((data) => {
           setIsLoading(false);
-          alert(`error ${data.error.code} ${data.error.message} ${text} `);
+          alert(`error ${data.error.code} ${data.error.message} `);
         });
       }
     });

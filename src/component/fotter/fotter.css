@@ -90,6 +90,7 @@
   }
   .fotter-container .fotter-col2 {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     padding-top: 20px;
   }

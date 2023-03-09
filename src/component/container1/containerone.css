@@ -71,12 +71,6 @@
   width: 95px;
 }
 
-/* @media screen and (max-width: 782px) {
-  .container-1 .container-content .btn-area {
-    display: none;
-  }
-} */
-
 @media screen and (max-width: 818px) {
   .containpics {
     height: fit-content;
