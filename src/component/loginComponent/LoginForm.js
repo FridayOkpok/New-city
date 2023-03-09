@@ -2,11 +2,14 @@ import React, { useState } from "react";
 import "./loginform.css";
 import Facebook from "./Facebook.png";
 import Google from "./Google.png";
+import { useDispatch } from "react-redux";
+import { loginAction } from "../../store/Store";
 
 function LoginForm({ setImage }) {
+  const dispatch = useDispatch();
   const [userHasAccount, setUserHasAccount] = useState(true);
   const [emailInput, setEmailInput] = useState(" ");
-  const [passwordInput, setPasswordInput] = useState(" ");
+  const [passwordInput, setPasswordInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
   function onChangeEmailHandeler(event) {
@@ -20,23 +23,22 @@ function LoginForm({ setImage }) {
   function onLoginHandeler() {
     setUserHasAccount((previous) => !previous);
     setImage(userHasAccount);
+    setEmailInput(" ");
+    setPasswordInput(" ");
   }
 
   let url;
-  let sucmeg;
+
   function submitFormHandeler() {
     setIsLoading(true);
     if (userHasAccount) {
-
-      sucmeg = "Login Sucessfull";
       //
       url =
         "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAlWveUg0aFYUGO0w96K2DpgK3v6-z8a20";
-      } else {
-        url =
+    } else {
+      url =
         "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyAlWveUg0aFYUGO0w96K2DpgK3v6-z8a20";
-        sucmeg = "Registration Sucessfull";
-      }
+    }
 
     const req = fetch(url, {
       method: "POST",
@@ -51,14 +53,22 @@ function LoginForm({ setImage }) {
     });
 
     const data = req.then((response) => {
+      console.log(response);
       if (response.ok) {
         const res = response.json();
         console.log(res);
+        setEmailInput("");
+        setPasswordInput("");
         setIsLoading(false);
-        alert(`${sucmeg}`);
+        dispatch(loginAction.togglePupUp());
+
+        setUserHasAccount(true);
         return res;
       } else {
         response.json().then((data) => {
+          setEmailInput("");
+          setPasswordInput("");
+
           setIsLoading(false);
           alert(`error ${data.error.code} ${data.error.message} `);
         });
@@ -72,7 +82,7 @@ function LoginForm({ setImage }) {
         <div className="inputContainer">
           {isLoading && <h2> Loading </h2>}
           <input
-            type="mail"
+            type="email"
             className="input-text"
             placeholder="EMAIL"
             value={emailInput}
@@ -80,7 +90,7 @@ function LoginForm({ setImage }) {
           />
 
           <input
-            type="mail"
+            type="password"
             className="input-text"
             placeholder="PASSWORD"
             value={passwordInput}

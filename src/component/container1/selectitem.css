@@ -8,6 +8,8 @@
   padding: 10px;
   max-width: 800px;
   justify-content: flex-start;
+  box-shadow: 0px 5px 33px rgba(185, 212, 237, 0.3);
+  border-radius: 5px;
 }
 
 .travel h3 {
@@ -44,9 +46,8 @@
 @media screen and (max-width: 1038px) {
   .travel {
     display: flex;
-    width: 40%;
+    width: 80%;
     justify-content: flex-start;
-    padding: 10px 30px;
   }
 
   .travel .travel-input {
