@@ -9,8 +9,64 @@ function LoginForm({ setImage }) {
   const dispatch = useDispatch();
   const [userHasAccount, setUserHasAccount] = useState(true);
   const [emailInput, setEmailInput] = useState(" ");
+  const [forgotten, setForgotten] = useState(false);
+
   const [passwordInput, setPasswordInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const showEmail = forgotten || userHasAccount;
+
+  const style1 = {
+    display: "flex",
+    width: "95%",
+    justifyContent: "center",
+    alignItems: "center",
+  };
+
+  const style2 = {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "flex-start",
+    padding: " 11.3699px 7.0959px",
+    gap: "10.68pX",
+    backgroundColor: "green",
+
+    width: " 90.5%",
+    height: "30.74px",
+
+    border: "1.06849px solid rgba(2, 14, 18, 0.4)",
+    borderRadius: "5.34247px",
+  };
+
+  function onChangePasswordFn() {
+    setForgotten(true);
+    const req = fetch(
+      " https://identitytoolkit.googleapis.com/v1/accounts:sendOobCode?key=AIzaSyAlWveUg0aFYUGO0w96K2DpgK3v6-z8a20",
+      {
+        method: "POST",
+        body: JSON.stringify({
+          email: emailInput,
+          requestType: "PASSWORD_RESET",
+        }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+
+    const data = req.then((response) => {
+      if (response.ok) {
+        const res = response.json();
+        alert(`Email has been sent to ${emailInput}`);
+        return res;
+      } else {
+        response.json().then((data) => {
+          setEmailInput("");
+          setIsLoading(false);
+          alert(`error ${data.error.code}: ${data.error.message} `);
+        });
+      }
+    });
+  }
 
   function onChangeEmailHandeler(event) {
     setEmailInput(event.target.value);
@@ -23,8 +79,8 @@ function LoginForm({ setImage }) {
   function onLoginHandeler() {
     setUserHasAccount((previous) => !previous);
     setImage(userHasAccount);
-    setEmailInput(" ");
-    setPasswordInput(" ");
+    setEmailInput("");
+    setPasswordInput("");
   }
 
   let url;
@@ -70,7 +126,7 @@ function LoginForm({ setImage }) {
           setPasswordInput("");
 
           setIsLoading(false);
-          alert(`error ${data.error.code} ${data.error.message} `);
+          alert(`error ${data.error.code}: ${data.error.message} `);
         });
       }
     });
@@ -81,27 +137,33 @@ function LoginForm({ setImage }) {
       <div className="loginform-container">
         <div className="inputContainer">
           {isLoading && <h2> Loading </h2>}
-          <input
-            type="email"
-            className="input-text"
-            placeholder="EMAIL"
-            value={emailInput}
-            onChange={onChangeEmailHandeler}
-          />
 
-          <input
-            type="password"
-            className="input-text"
-            placeholder="PASSWORD"
-            value={passwordInput}
-            onChange={onChangePasswordHandeler}
-          />
+          {showEmail && (
+            <input
+              type="email"
+              className="input-text"
+              placeholder="EMAIL"
+              value={emailInput}
+              onChange={onChangeEmailHandeler}
+            />
+          )}
 
+          {showEmail && (
+            <input
+              type="password"
+              className="input-text"
+              placeholder="PASSWORD"
+              value={passwordInput}
+              onChange={onChangePasswordHandeler}
+            />
+          )}
           <span onClick={submitFormHandeler}>{`${
             userHasAccount ? `Log In ` : `Create Account`
           }`}</span>
         </div>
-        {userHasAccount && <h4> forgot your password ?</h4>}
+        {userHasAccount && (
+          <h4 onClick={onChangePasswordFn}> forgot your password ?</h4>
+        )}
         <div className="orlogin">
           <div className="line1"> </div>
           <h5>or {`${userHasAccount ? "Log in with " : "Sign up with"}`}</h5>
