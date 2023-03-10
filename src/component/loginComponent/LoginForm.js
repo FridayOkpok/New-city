@@ -138,25 +138,21 @@ function LoginForm({ setImage }) {
         <div className="inputContainer">
           {isLoading && <h2> Loading </h2>}
 
-          {showEmail && (
-            <input
-              type="email"
-              className="input-text"
-              placeholder="EMAIL"
-              value={emailInput}
-              onChange={onChangeEmailHandeler}
-            />
-          )}
+          <input
+            type="email"
+            className="input-text"
+            placeholder="EMAIL"
+            value={emailInput}
+            onChange={onChangeEmailHandeler}
+          />
 
-          {showEmail && (
-            <input
-              type="password"
-              className="input-text"
-              placeholder="PASSWORD"
-              value={passwordInput}
-              onChange={onChangePasswordHandeler}
-            />
-          )}
+          <input
+            type="password"
+            className="input-text"
+            placeholder="PASSWORD"
+            value={passwordInput}
+            onChange={onChangePasswordHandeler}
+          />
           <span onClick={submitFormHandeler}>{`${
             userHasAccount ? `Log In ` : `Create Account`
           }`}</span>
