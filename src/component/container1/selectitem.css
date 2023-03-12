@@ -3,15 +3,14 @@
   flex-direction: column;
   width: 70%;
   background-color: #391cee;
-  margin: 30px auto;
   margin-top: 2rem;
-  padding: 10px;
+  margin-left: 2rem;
   justify-content: flex-start;
   gap: 10px;
   box-shadow: 0px 5px 33px rgba(185, 212, 237, 0.3);
   border-radius: 5px;
 
-  width: 1268px;
+  width: 95%;
   height: 165px;
 }
 
@@ -24,7 +23,7 @@
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
-  padding: 0 100px;
+  padding: 0 0 0 100px;
 
   color: #fbfeff;
 }
@@ -35,13 +34,13 @@
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
-  gap: 54px;
+  gap: 20px;
 
-  width: 1057.68px;
+  /* width: 80%; */
   height: 44px;
-  left: 93px;
-  top: 91px;
-  padding: 0 100px;
+  /* left: 93px; */
+  /* top: 91px; */
+  padding: 1px;
 }
 
 .travel .travel-input .travel-item {
