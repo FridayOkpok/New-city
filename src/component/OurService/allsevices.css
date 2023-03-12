@@ -14,7 +14,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 40%;
+  width: 50%;
 }
 
 .all-servicescontainer .all-servicetext h4 {
@@ -62,7 +62,7 @@
   width: 100%;
 }
 
-@media screen and (max-width: 925px) {
+@media screen and (max-width: 1007px) {
   .all-servicescontainer {
     flex-direction: column;
     height: fit-content;
