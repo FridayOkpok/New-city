@@ -7,7 +7,10 @@ function ContainerOne() {
     <section id="section-1">
       <div className="container-1">
         <div className="container-content">
-          <h2> Breathe Easy, We've Got Your Move Covered </h2>
+          <h2>
+            {" "}
+            <span>Breathe Easy</span>, We've Got Your Move Covered{" "}
+          </h2>
           <p className="contain-text">
             {" "}
             we understand that moving can be stressful and an overwhelming

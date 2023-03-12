@@ -1,7 +1,8 @@
 .logo-container {
   display: flex;
-  padding: 20px 40px;
+  padding: 20px 50px;
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
+  gap: 152px;
 }

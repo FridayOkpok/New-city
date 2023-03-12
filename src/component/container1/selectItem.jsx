@@ -11,7 +11,7 @@ function SelectItem() {
 
   return (
     <div className="travel">
-      <div>
+      <div className="travel-text">
         <h3>Price Estimation </h3>
       </div>
       <div className="travel-input">

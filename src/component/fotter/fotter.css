@@ -4,8 +4,9 @@
   justify-content: space-around;
   align-items: center;
   padding: 50px 10px;
-  margin-top: 10px;
   gap: 40px;
+  position: relative;
+  bottom: 0;
 }
 
 .fotter-container .fotter-col1 {

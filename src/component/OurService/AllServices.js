@@ -2,18 +2,10 @@ import React from "react";
 import "./allsevices.css";
 
 function AllServices({ header, text, image, color, position }) {
-  let px;
-
-  if (window.innerWidth > 925) {
-    px = "";
-  } else {
-    px = "column-reverse";
-  }
-
   if (position === "right") {
     return (
       <div
-        className="all-servicescontainer"
+        className="all-servicescontainer "
         style={{ backgroundColor: `${color}` }}
       >
         <div className="all-servicetext">
@@ -30,8 +22,8 @@ function AllServices({ header, text, image, color, position }) {
   } else {
     return (
       <div
-        className="all-servicescontainer"
-        style={{ backgroundColor: `${color}`, flexDirection: `${px}` }}
+        className="all-servicescontainer reverse"
+        style={{ backgroundColor: `${color}` }}
       >
         <div className="img-section">
           <img src={image} alt="nathaniel" />
@@ -45,8 +37,6 @@ function AllServices({ header, text, image, color, position }) {
       </div>
     );
   }
-
-  //   return <>{content}</>;
 }
 
 export default AllServices;

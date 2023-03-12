@@ -4,7 +4,7 @@
   background-position: 100% 100%;
   background-repeat: no-repeat;
   background-position: center center;
-  height: fit-content;
+  height: 100vh;
 }
 
 .container-1 {
@@ -12,35 +12,28 @@
   flex-direction: column;
   justify-content: flex-start;
   width: 100%;
-  animation: fade-in-right 3s ease forwards;
-}
-
-@keyframes fade-in-right {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 .container-1 .container-content {
-  margin-top: 4rem;
+  margin-top: 100px;
   height: fit-content;
 }
 
 .container-1 .container-content h2 {
   padding: 0 10px;
   margin-left: 2rem;
-  font-family: Josefin Sans;
   color: #fbfeff;
-  background: rgba(255, 255, 255, 0.2);
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
   font-size: 64px;
-  font-weight: 400;
   line-height: 58px;
-  letter-spacing: 0em;
-  text-align: left;
-  max-width: 420px;
+  max-width: 450px;
+  border: 1px solid rgba(2, 14, 18, 0.3);
+}
+
+.container-1 .container-content h2 span {
+  color: #f5d90e;
 }
 
 .container-1 .container-content p {
@@ -50,7 +43,6 @@
 
   font-weight: 700;
   color: #fbfeff;
-  background: rgba(255, 255, 255, 0.2);
   border-radius: 3px;
   padding: 2px;
   line-height: 27px;
@@ -58,6 +50,15 @@
   padding: 0 10px;
   letter-spacing: 0.15000000596046448px;
   text-align: justify;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 10px;
+
+  width: 477px;
+  height: 116px;
 }
 
 .container-1 .container-content .btn-area {
@@ -69,39 +70,4 @@
 }
 .container-1 .container-content .btn-signup {
   width: 95px;
-}
-
-@media screen and (max-width: 818px) {
-  .containpics {
-    height: fit-content;
-  }
-  .container-1 .container-content h2 {
-    padding: 0 10px;
-    margin-left: 2rem;
-    font-family: Josefin Sans;
-    color: #fbfeff;
-    background: rgba(255, 255, 255, 0.2);
-    font-size: 44px;
-    font-weight: 300;
-    line-height: 48px;
-    letter-spacing: 0em;
-    text-align: left;
-    max-width: 420px;
-  }
-  .container-1 .container-content p {
-    font-family: Josefin Sans;
-    font-size: 15px;
-    margin-left: 1rem;
-
-    font-weight: 300;
-    color: #fbfeff;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 3px;
-    padding: 2px;
-    line-height: 27px;
-    max-width: 420px;
-    padding: 0 10px;
-    letter-spacing: 0.15000000596046448px;
-    text-align: justify;
-  }
 }

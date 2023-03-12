@@ -1,15 +1,35 @@
 import React from "react";
 import "./testimonies.css";
 import { BsStarFill } from "react-icons/bs";
+import { useSpring, animated } from "react-spring";
 import user1 from "./Ellipse.png";
 import user2 from "./Ellipse1.png";
 import user3 from "./Ellipse2.png";
 import user4 from "./Ellipse3.png";
 
 function Testimonies() {
+  const [isVisible, setIsVisible] = React.useState(false);
+  const fadeAnimation = useSpring({
+    opacity: isVisible ? 1 : 0,
+    transform: isVisible ? "translateY(0)" : "translateY(20px)",
+  });
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      if (currentScrollPos > 360) {
+        setIsVisible(true);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  console.log(`testimonies ${isVisible}`);
+
   return (
     <>
-      <div className="testimonies">
+      <animated.div style={fadeAnimation} className="testimonies">
         <div className="peoples-container">
           <div className="people-testimonies">
             <div className="people-col1">
@@ -126,7 +146,7 @@ function Testimonies() {
             </div>
           </div>
         </div>
-      </div>
+      </animated.div>
     </>
   );
 }

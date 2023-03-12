@@ -5,9 +5,9 @@
   background: rgba(187, 179, 234, 0.22);
   /* padding: 30px 10px; */
   /* Auto layout */
+  /* width: 100%; */
   padding: 12px 120px;
   gap: 34px;
-  overflow: scroll;
 }
 
 .moved-container ::-webkit-scrollbar {

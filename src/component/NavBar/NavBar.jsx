@@ -23,8 +23,8 @@ function NavBar() {
   return (
     <div className="nav" id="nav">
       <div className="nav-container ">
+        <img src={Logo} alt="companies-logo" className="nav-logo-item" />
         <div className="nav-item">
-          <img src={Logo} alt="companies-logo" className="nav-logo-item" />
           <ul>
             {" "}
             <NavLink
@@ -55,35 +55,36 @@ function NavBar() {
               </li>
             </NavLink>
           </ul>
-        </div>
-        <BsMenuButtonFill
-          className="menubtn"
-          onClick={onShowLoginHandelerFunction}
-        />
-        {showMenu && (
-          <div className="loginMenu">
-            <div className="btn-area nav-btnarea">
-              <h4 onClick={onShowLoginHandelerFunction}>Hide</h4>
 
-              <div className="btn btn-login" onClick={onLoginHandeler}>
-                {" "}
-                Login{" "}
-              </div>
-              <div className="btn btn-signup" onClick={onLoginHandeler}>
-                {" "}
-                Sign-Up{" "}
+          <BsMenuButtonFill
+            className="menubtn"
+            onClick={onShowLoginHandelerFunction}
+          />
+          {showMenu && (
+            <div className="loginMenu">
+              <div className="btn-area nav-btnarea">
+                <h4 onClick={onShowLoginHandelerFunction}>Hide</h4>
+
+                <div className="btn btn-login" onClick={onLoginHandeler}>
+                  {" "}
+                  Login{" "}
+                </div>
+                <div className="btn btn-signup" onClick={onLoginHandeler}>
+                  {" "}
+                  Sign-Up{" "}
+                </div>
               </div>
             </div>
-          </div>
-        )}
-        <div className="btn-area nav-btnarea">
-          <div className="btn btn-login" onClick={onLoginHandeler}>
-            {" "}
-            Login{" "}
-          </div>
-          <div className="btn btn-signup" onClick={onLoginHandeler}>
-            {" "}
-            Sign-Up{" "}
+          )}
+          <div className="btn-area nav-btnarea">
+            <div className="btn btn-login" onClick={onLoginHandeler}>
+              {" "}
+              Login{" "}
+            </div>
+            <div className="btn btn-signup" onClick={onLoginHandeler}>
+              {" "}
+              Sign-Up{" "}
+            </div>
           </div>
         </div>
       </div>

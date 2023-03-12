@@ -12,7 +12,6 @@
 
 .abouttestimonies .peoples-container .people-testimonies {
   display: flex;
-  overflow: scroll;
 
   gap: 20px;
   width: 95%;

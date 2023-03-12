@@ -5,6 +5,7 @@ body {
     sans-serif;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body::-webkit-scrollbar {
@@ -42,20 +43,21 @@ Link {
 }
 
 .active {
-  color: #391cee;
-  border: none;
+  width: 39px;
+  height: 2px;
+  /* filter: blur(2px); */
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+
+  border-bottom-color: rgba(57, 28, 238, 0.4);
 }
 
 .about {
+  /* margin-top: 150px; */
+
   margin-top: 7rem;
   height: fit-content;
   animation: opacity-in 3s ease forwards;
-}
-
-@media screen and (max-width: 840px) {
-  .about {
-    height: fit-content;
-  }
 }
 
 @keyframes opacity-in {
@@ -75,6 +77,7 @@ Link {
   display: flex;
   justify-content: center;
   /* padding: 0 20px; */
+  align-items: flex-start;
   align-items: center;
   gap: 10px;
 }
@@ -108,7 +111,7 @@ Link {
   background: #f5d90e;
   width: 10rem;
   align-items: center;
-  min-height: 1rem;
+  height: 0.8rem;
 }
 
 option:focus {
@@ -127,9 +130,8 @@ input {
   width: 180px;
 }
 
-.city {
-  border: 2px solid #f5d90e;
-  height: 2rem;
+select {
+  height: 2.5rem;
   border-radius: 5px;
   width: 180px;
 }
