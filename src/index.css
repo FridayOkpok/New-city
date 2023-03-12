@@ -180,3 +180,20 @@ select {
   width: 50px;
   height: 30px;
 }
+
+.feedback {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #f5da0e5b;
+  width: 90%;
+  font-family: Josefin Sans;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 54px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+  padding: 0 5px;
+}

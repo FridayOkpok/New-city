@@ -9,36 +9,16 @@ function LoginForm({ setImage }) {
   const dispatch = useDispatch();
   const [userHasAccount, setUserHasAccount] = useState(true);
   const [emailInput, setEmailInput] = useState(" ");
-  const [forgotten, setForgotten] = useState(false);
-
   const [passwordInput, setPasswordInput] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
-  const showEmail = forgotten || userHasAccount;
-
-  const style1 = {
-    display: "flex",
-    width: "95%",
-    justifyContent: "center",
-    alignItems: "center",
-  };
-
-  const style2 = {
-    display: "flex",
-    flexDirection: "row",
-    alignItems: "flex-start",
-    padding: " 11.3699px 7.0959px",
-    gap: "10.68pX",
-    backgroundColor: "green",
-
-    width: " 90.5%",
-    height: "30.74px",
-
-    border: "1.06849px solid rgba(2, 14, 18, 0.4)",
-    borderRadius: "5.34247px",
-  };
+  const [feedBack, setFeedBack] = useState("");
+  let url;
 
   function onChangePasswordFn() {
-    setForgotten(true);
+    if (emailInput.trim() === "") {
+      setFeedBack(" E-mail can't be left empty ");
+      return;
+    }
+
     const req = fetch(
       " https://identitytoolkit.googleapis.com/v1/accounts:sendOobCode?key=AIzaSyAlWveUg0aFYUGO0w96K2DpgK3v6-z8a20",
       {
@@ -53,26 +33,27 @@ function LoginForm({ setImage }) {
       }
     );
 
-    const data = req.then((response) => {
+    req.then((response) => {
       if (response.ok) {
         const res = response.json();
-        alert(`Email has been sent to ${emailInput}`);
+        setFeedBack(`Email has been sent to ${emailInput}`);
         return res;
       } else {
         response.json().then((data) => {
           setEmailInput("");
-          setIsLoading(false);
-          alert(`error ${data.error.code}: ${data.error.message} `);
+          setFeedBack(`error ${data.error.code}: ${data.error.message} `);
         });
       }
     });
   }
 
   function onChangeEmailHandeler(event) {
+    setFeedBack("");
     setEmailInput(event.target.value);
   }
 
   function onChangePasswordHandeler(event) {
+    setFeedBack("");
     setPasswordInput(event.target.value);
   }
 
@@ -83,10 +64,7 @@ function LoginForm({ setImage }) {
     setPasswordInput("");
   }
 
-  let url;
-
   function submitFormHandeler() {
-    setIsLoading(true);
     if (userHasAccount) {
       //
       url =
@@ -108,14 +86,13 @@ function LoginForm({ setImage }) {
       },
     });
 
-    const data = req.then((response) => {
+    req.then((response) => {
       console.log(response);
       if (response.ok) {
         const res = response.json();
         console.log(res);
         setEmailInput("");
         setPasswordInput("");
-        setIsLoading(false);
         dispatch(loginAction.togglePupUp());
 
         setUserHasAccount(true);
@@ -124,20 +101,18 @@ function LoginForm({ setImage }) {
         response.json().then((data) => {
           setEmailInput("");
           setPasswordInput("");
-
-          setIsLoading(false);
-          alert(`error ${data.error.code}: ${data.error.message} `);
+          setFeedBack(`error ${data.error.code}: ${data.error.message} `);
         });
       }
     });
   }
 
+  const feedbackItem = feedBack.trim() === " ";
   return (
     <>
       <div className="loginform-container">
         <div className="inputContainer">
-          {isLoading && <h2> Loading </h2>}
-
+          {!feedbackItem && <h2 className="feedback"> {feedBack} </h2>}
           <input
             type="email"
             className="input-text"
