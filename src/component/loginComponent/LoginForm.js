@@ -112,7 +112,8 @@ function LoginForm({ setImage }) {
     <>
       <div className="loginform-container">
         <div className="inputContainer">
-          {!feedbackItem && <h2 className="feedback"> {feedBack} </h2>}
+          {!feedbackItem && <h5 className="feedback"> {feedBack} </h5>}
+
           <input
             type="email"
             className="input-text"
