@@ -1,0 +1,123 @@
+.startedform-container {
+  width: 90%;
+  margin: 39px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.startedform-container .col {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.startedform-container .form-col1 span {
+  width: 50%;
+  height: 20px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+  color: #020e12;
+}
+
+.startedform-container .form-col1 select {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  gap: 24px;
+
+  width: 166.3px;
+  height: 44px;
+
+  border: 1px solid rgba(2, 14, 18, 0.3);
+}
+
+.startedform-container .form-col1 .form-from {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.startedform-container .form-col1 .form-from input {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px;
+  gap: 10px;
+
+  height: 19px;
+
+  border: 1px solid rgba(2, 14, 18, 0.3);
+}
+
+.startedform-container .form-col1 .form-to input {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px;
+  gap: 10px;
+
+  height: 19px;
+
+  border: 1px solid rgba(2, 14, 18, 0.3);
+}
+
+.startedform-container .form-col1 .form-to {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.startedform-container .apartment {
+  width: 197.35px;
+  height: 20px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+  /* text */
+
+  color: #020e12;
+}
+
+.startedform-container .form-btn {
+  width: 95%;
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.startedform-container .form-btn span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  gap: 10px;
+
+  width: 35px;
+  cursor: pointer;
+
+  height: 11px;
+
+  /* primary */
+
+  background: #391cee;
+  border-radius: 5px;
+}

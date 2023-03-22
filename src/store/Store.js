@@ -1,4 +1,5 @@
 import { configureStore, createSlice } from "@reduxjs/toolkit";
+import Quote from "./QuoteStore";
 
 const login = createSlice({
   name: "login",
@@ -13,7 +14,9 @@ const login = createSlice({
   },
 });
 
-const store = configureStore({ reducer: login.reducer });
+const store = configureStore({
+  reducer: { login: login.reducer, Quote: Quote.reducer },
+});
 
 export const loginAction = login.actions;
 

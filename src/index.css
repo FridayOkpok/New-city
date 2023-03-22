@@ -30,6 +30,7 @@ h6 {
 ul,
 a {
   list-style-type: none;
+  text-decoration: none;
 }
 
 Link {
@@ -37,18 +38,34 @@ Link {
 }
 
 .notactive {
+  display: flex;
+  justify-content: center;
+  /* padding: 0 20px; */
+  align-items: center;
+  text-align: center;
+
   color: black;
   text-decoration: none;
 }
 
+.notactive li h5 {
+  width: 85px;
+}
+
 .active {
-  width: 39px;
-  height: 2px;
-  /* filter: blur(2px); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.active li h5 {
   border-bottom-style: solid;
   border-bottom-width: 1px;
 
   border-bottom-color: rgba(57, 28, 238, 0.4);
+  width: 85px;
+  padding: 2px;
 }
 
 .about {
@@ -133,6 +150,37 @@ select {
   height: 2.5rem;
   border-radius: 5px;
   width: 180px;
+}
+
+/* Style the select box */
+select {
+  color: #333;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+
+  transition: all 0.3s ease;
+}
+
+/* Style the options */
+option {
+  color: #333;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+option:hover {
+  background-color: #f5f5f5;
+}
+
+/* Style the selected option */
+option:checked {
+  background-color: #ccc;
 }
 
 .icons {

@@ -1,0 +1,94 @@
+.quotecontainer {
+  height: 100vh;
+  overflow: scroll;
+  margin: -12px auto;
+  max-width: 845px;
+}
+
+.quotecontainer::-webkit-scrollbar {
+  display: none;
+}
+
+.quotecontainer .quote-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.quotecontainer .quote-text h5 {
+  margin: 0;
+  padding: 0;
+}
+
+.quotecontainer .quote-text .text-top {
+  width: 187px;
+  height: 48px;
+
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 150%;
+  /* identical to box height, or 48px */
+
+  /* Dark Neutral/Darken 4 */
+
+  color: #000e29;
+}
+
+.quotecontainer .quote-text .text-bottom {
+  width: 187px;
+  height: 20px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.quotecontainer .quote-steps {
+  display: flex;
+  margin-top: 20px;
+  padding: 0px;
+  width: 1102px;
+  gap: 46px;
+
+  /* max-width: 1458px; */
+  height: 45px;
+}
+
+.quotecontainer .quote-steps .quote-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  /* width: 100%; */
+}
+
+.quotecontainer .quote-steps .quote-list .quote-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 15px;
+  /* identical to box height */
+
+  color: rgba(2, 14, 18, 0.8);
+}
+
+.quotecontainer .quote-steps .quote-list .quote-list-item .yellow-line {
+  width: 220px;
+  height: 9px;
+
+  background: #f5d90e;
+}

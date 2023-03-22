@@ -17,7 +17,7 @@ function ContainerOne() {
             process. That's why we're here to take the weight off your shoulders
             ensure a smooth transition to your new home{" "}
           </p>
-          <div className="btn-area">
+          <div className="btn-area tand">
             <div className="btn btn-login"> Get Moving </div>
             <div className="btn btn-signup"> Learn More </div>
           </div>

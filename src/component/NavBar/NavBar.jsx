@@ -37,6 +37,24 @@ function NavBar() {
               </li>
             </NavLink>
             <NavLink
+              to="qoutes"
+              className={({ isActive }) => (isActive ? `active` : `notactive`)}
+              end
+            >
+              <li>
+                <h5>Get Quote</h5>
+              </li>
+            </NavLink>
+            <NavLink
+              to=""
+              className={({ isActive }) => (isActive ? `active` : `notactive`)}
+              end
+            >
+              <li>
+                <h5>Track Move</h5>
+              </li>
+            </NavLink>
+            <NavLink
               to="about"
               className={({ isActive }) => (isActive ? `active` : `notactive`)}
               end

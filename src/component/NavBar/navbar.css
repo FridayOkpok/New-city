@@ -37,9 +37,9 @@
   flex-direction: row;
   align-items: center;
   padding: 0px;
-  gap: 167px;
+  gap: 267px;
 
-  width: 787px;
+  width: 887px;
   height: 51px;
 }
 
@@ -123,12 +123,10 @@
 }
 
 .nav .nav-container .loginMenu .btn-area .btn-login {
-  /* primary */
   background: #391cee;
 }
 
 .nav .nav-container .loginMenu .btn-area .btn-signup {
-  /* primary */
   width: 80px;
 }
 
@@ -136,9 +134,11 @@
   .nav .nav-container .menubtn {
     display: inline-block;
   }
+
   .nav .nav-container .nav-btnarea {
     display: none;
   }
+
   .nav .nav-container .loginMenu {
     display: inline-block;
   }
