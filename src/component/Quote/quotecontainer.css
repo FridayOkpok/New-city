@@ -1,6 +1,6 @@
 .quotecontainer {
   height: 100vh;
-  overflow: scroll;
+  overflow: hidden;
   margin: -12px auto;
   max-width: 845px;
 }
