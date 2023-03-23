@@ -1,8 +1,8 @@
 .quotecontainer {
-  height: 100vh;
   overflow: hidden;
-  margin: -12px auto;
+  margin: 0 auto;
   max-width: 845px;
+  margin-bottom: 2rem;
 }
 
 .quotecontainer::-webkit-scrollbar {

@@ -24,7 +24,6 @@ const router = createBrowserRouter(
       <Route path="about" element={<About />} />
       <Route path="services" element={<Service />} />
       <Route path="contact" element={<Contact />} />
-      <Route path="qoutes" element={<UserQuote />} />
       <Route path="qoutes" element={<UserQuote />}>
         <Route index element={<QuoteForm />} />
         <Route path="quote-inventory" element={<Quoteinventory />} />

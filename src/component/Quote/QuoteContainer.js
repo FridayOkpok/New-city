@@ -1,8 +1,12 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import "./quotecontainer.css";
 
 function QuoteContainer() {
+  const location = useLocation().pathname;
+  const quotes = location === "/qoutes" ? " yellow-line" : "";
+  const quoteinventory =
+    location === "/qoutes/quote-inventory" ? "yellow-line" : "";
   return (
     <div className="quotecontainer">
       <div className="quote-text">
@@ -13,16 +17,16 @@ function QuoteContainer() {
         <ul className="quote-list">
           <li className=" quote-list-item">
             GET STARTED
-            <div className="yellow-line"> </div>
+            <div className={quotes}> </div>
           </li>
           <li className=" quote-list-item">
-            QUICK INVENTORY <div className="yellow-line"> </div>
+            QUICK INVENTORY <div className={quoteinventory}> </div>
           </li>
           <li className=" quote-list-item">
-            REQUIRED SERVICES <div className="yellow-line"> </div>
+            REQUIRED SERVICES <div className=""> </div>
           </li>
           <li className=" quote-list-item">
-            FINISH <div className="yellow-line"> </div>
+            FINISH <div className=""> </div>
           </li>
         </ul>
       </div>

@@ -246,3 +246,32 @@ option:checked {
   margin: 0;
   padding: 0 5px;
 }
+
+.form-btn {
+  width: 95%;
+  height: 40px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-btn span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  gap: 10px;
+  /* font-size: 15px; */
+
+  width: 35px;
+  cursor: pointer;
+  border: 2px solid gray;
+  height: 11px;
+
+  /* primary */
+
+  background: #391cee;
+  border-radius: 5px;
+}

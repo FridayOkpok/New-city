@@ -2,11 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
   background: rgba(187, 179, 234, 0.22);
   /* padding: 30px 10px; */
   /* Auto layout */
   /* width: 100%; */
-  padding: 12px 120px;
+  padding: 12px 10px;
   gap: 34px;
 }
 

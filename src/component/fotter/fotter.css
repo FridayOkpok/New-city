@@ -6,7 +6,7 @@
   padding: 50px 10px;
   gap: 40px;
   position: relative;
-  bottom: 0;
+  bottom: -1.5rem;
 }
 
 .fotter-container .fotter-col1 {

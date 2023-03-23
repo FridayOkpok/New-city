@@ -32,15 +32,15 @@ function createData(name, calories, fat, carbs) {
 }
 
 const rows = [
-  createData("TV Stand", "-", "+", 3),
-  createData("DVD", "-", "+", 9),
+  createData("TV Stand", "-", "+", 0),
+  createData("DVD", "-", "+", 2),
   createData("Decoder", "-", "+", 0),
-  createData("Home Theatre", "-", "+", 0),
-  createData("Center Table", "-", "+", 9),
-  createData("Side Stool", "-", "+", 5),
-  createData("Center Rag", "-", "+", 3),
-  createData("Woofers , Subwoffers", "-", "+", 0),
-  createData("Settee", "-", "+", 0),
+  createData("Home Theatre", "-", "+", 3),
+  createData("Center Table", "-", "+", 0),
+  createData("Side Stool", "-", "+", 0),
+  createData("Center Rag", "-", "+", 5),
+  createData("Woofers , Subwoffers", "-", "+", 8),
+  createData("Settee", "-", "+", 9),
 ];
 
 function descendingComparator(a, b, orderBy) {
@@ -213,7 +213,7 @@ export default function EnhancedTable() {
   const [orderBy, setOrderBy] = React.useState("calories");
   const [selected, setSelected] = React.useState([]);
   const [page, setPage] = React.useState(0);
-  const [dense, setDense] = React.useState(false);
+  const [dense, setDense] = React.useState(true);
   const [rowsPerPage, setRowsPerPage] = React.useState(5);
 
   const handleRequestSort = (event, property) => {
@@ -276,7 +276,7 @@ export default function EnhancedTable() {
         <EnhancedTableToolbar numSelected={selected.length} />
         <TableContainer>
           <Table
-            sx={{ minWidth: 750 }}
+            sx={{ minWidth: 400 }}
             aria-labelledby="tableTitle"
             size={dense ? "small" : "medium"}
           >
@@ -288,6 +288,7 @@ export default function EnhancedTable() {
               onRequestSort={handleRequestSort}
               rowCount={rows.length}
             />
+
             <TableBody>
               {stableSort(rows, getComparator(order, orderBy))
                 .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
@@ -316,6 +317,7 @@ export default function EnhancedTable() {
                         />
                       </TableCell>
                       <TableCell
+                        sx={{ cursor: "pointer", width: "150px" }}
                         component="th"
                         id={labelId}
                         scope="row"
@@ -323,8 +325,8 @@ export default function EnhancedTable() {
                       >
                         {row.name}
                       </TableCell>
-                      <TableCell align="right">{row.calories}</TableCell>
-                      <TableCell align="right">{row.fat}</TableCell>
+                      <TableCell align="left">{row.calories}</TableCell>
+                      <TableCell align="left">{row.fat}</TableCell>
                       <TableCell align="right">{row.carbs}</TableCell>
                     </TableRow>
                   );

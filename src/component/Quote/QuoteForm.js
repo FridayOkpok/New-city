@@ -27,20 +27,31 @@ function QuoteForm() {
       observer.unobserve(current);
     };
   }, []);
-  console.log(isVisible);
   return (
-    <div ref={targetRef} style={fadeAnimation} className="quoteform-container">
-      <div className="quoteform-left">
-        <div className="quoteservice-list">
-          <ul>
-            <li className="quoteservice-listitem">Residential</li>
-            <li className="quoteservice-listitem">Cooperative</li>
-            <li className="quoteservice-listitem">Interstate</li>
-          </ul>
+    <div style={{ height: "100vh" }}>
+      <div
+        ref={targetRef}
+        style={fadeAnimation}
+        className="quoteform-container"
+      >
+        <div className="quoteform-left">
+          <div className="quoteservice-list">
+            <ul>
+              <li className="quoteservice-listitem" style={{ width: "220px" }}>
+                Residential
+              </li>
+              <li className="quoteservice-listitem" style={{ width: "220px" }}>
+                Cooperative
+              </li>
+              <li className="quoteservice-listitem" style={{ width: "220px" }}>
+                Interstate
+              </li>
+            </ul>
+          </div>
+          <GetStartedForm />
         </div>
-        <GetStartedForm />
+        <div className="quoteform-right"> </div>
       </div>
-      <div className="quoteform-right"> </div>
     </div>
   );
 }

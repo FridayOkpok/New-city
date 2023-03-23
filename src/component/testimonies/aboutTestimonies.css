@@ -6,8 +6,14 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+  width: 99%;
   gap: 10px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.abouttestimonies .peoples-container::-webkit-scrollbar {
+  display: none;
 }
 
 .abouttestimonies .peoples-container .people-testimonies {
@@ -18,7 +24,7 @@
   align-items: center;
 }
 
-.abouttestimonies .peoples-container .people-testimonies ::-webkit-scrollbar {
+.abouttestimonies .peoples-container .people-testimonies::-webkit-scrollbar {
   display: none;
 }
 .abouttestimonies .peoples-container .people-testimonies .user1 {

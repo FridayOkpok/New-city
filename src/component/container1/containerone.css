@@ -4,7 +4,7 @@
   background-position: 100% 100%;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 100vh;
+  height: 120vh;
 }
 
 .container-1 {
@@ -60,11 +60,11 @@
 
   width: 477px;
   height: 116px;
-  margin-top: -2rem;
+  margin-top: -1rem;
 }
 
 .container-1 .container-content .tand {
-  margin-top: -1.8rem;
+  margin-top: -1rem;
 }
 
 .container-1 .container-content .btn-area {
